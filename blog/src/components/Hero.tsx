@@ -19,7 +19,7 @@ const Hero = () => {
       <div className="w-[250px] h-[250px] bg-slate-300 mx-auto rounded-full"></div>
       <h2 className="text-xl font-bold">{`Hi, I'm yiwoojung`}</h2>
       <h3 className="text-lg font-semibold">Frontend Engineer</h3>
-      <p className="text-sm">꿈을 코딩하는 사람, 드림코더 앨리</p>
+      <p className="text-sm">프론트엔드 엔지니어, 이우정</p>
 
       <Link href="/contact">
         <button className="bg-yellow-500 rounded-xl text-sm font-medium py-1 px-4 mt-2">
