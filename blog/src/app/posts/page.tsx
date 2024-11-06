@@ -1,7 +1,10 @@
-import React from "react";
+import FilterablePosts from "@components/FilterablePosts";
+import { getAllPosts } from "@service/posts";
 
-const PostsPage = () => {
-  return <div>포스트들!</div>;
-};
+export default async function PostsPage() {
+  const posts = await getAllPosts();
+  // Set으로 중복 제거
+  const categories = [...new Set(posts.map((post) => post.category))];
 
-export default PostsPage;
+  return <FilterablePosts posts={posts} categories={categories} />;
+}
